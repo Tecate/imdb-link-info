@@ -1,0 +1,21 @@
+{
+  "name": "IMDB Link Info",
+  "description": "Displays information from IMDB beside all imdb.com links.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "exclude_matches": [
+        "http://www.imdb.com/"
+      ],
+      "js": ["jquery.js", "inject.js"]
+    }
+  ],
+  "manifest_version": 2
+}
