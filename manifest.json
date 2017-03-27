@@ -12,10 +12,13 @@
         "<all_urls>"
       ],
       "exclude_matches": [
-        "http://www.imdb.com/"
+        "http://www.imdb.com/*"
       ],
       "js": ["jquery.js", "inject.js"]
     }
+  ],
+  "web_accessible_resources": [
+    "img/*.png"
   ],
   "manifest_version": 2
 }
